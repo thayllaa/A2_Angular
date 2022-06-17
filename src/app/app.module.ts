@@ -7,6 +7,7 @@ import { HelloComponent } from './hello.component';
 import { ThayllaHomeComponent } from './thaylla-home/thaylla-home.component';
 import { ThayllaTasksComponent } from './thaylla-tasks/thaylla-tasks.component';
 import { ThayllaTasksService } from './thaylla-tasks.service';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   imports:      [ 
