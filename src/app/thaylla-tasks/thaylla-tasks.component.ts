@@ -15,14 +15,14 @@ export class ThayllaTasksComponent implements OnInit {
   }
 
   cadastrarTarefa() {
-    this.marjoryeService.adicionar(this.task);
+    this.thayllaService.adicionar(this.task);
   }
 
   removerTarefa(index: number) {
-    this.marjoryeService.remover(index);
+    this.thayllaService.remover(index);
   }
 
   listarTarefas() {
-    return this.marjoryeService.mostrarLista();
+    return this.thayllaService.mostrarLista();
   }
 }

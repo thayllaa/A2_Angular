@@ -14,6 +14,6 @@ export class ThayllaHomeComponent implements OnInit {
   }
 
   contarTasks() {
-    return this.marjoryeService.contarTarefas();
+    return this.thayllaService.contarTarefas();
   }
 }
