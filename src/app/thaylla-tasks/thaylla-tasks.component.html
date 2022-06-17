@@ -1,0 +1,8 @@
+<input type="text" [(ngModel)]="task" />
+<button (click)="cadastrarTarefa()"> Cadastar </button>
+
+<ul>
+  <li *ngFor="let task of listarTarefas(); index as i">
+    {{ task }} <button (click)="removerTarefa(i)">Deletar</button>
+  </li>
+</ul>
