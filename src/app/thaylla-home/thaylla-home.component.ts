@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ThayllaTasksService } from '../thaylla-tasks.service';
 
 @Component({
   selector: 'app-thaylla-home',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ThayllaHomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private thayllaService: ThayllaTasksService) { }
 
   ngOnInit() {
   }
 
+  contarTasks() {
+    return this.marjoryeService.contarTarefas();
+  }
 }
